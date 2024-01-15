@@ -22,9 +22,7 @@ public class GameScreen implements Screen {
 
 	@Override
 	public void show() {
-
 		game.img = new Texture("badlogic.jpg");
-		
 	}
 
 	@Override
