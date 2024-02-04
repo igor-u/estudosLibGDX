@@ -3,7 +3,6 @@ package com.mygdx.game.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.mygdx.game.SpiralGame;
 
@@ -22,7 +21,6 @@ public class GameScreen implements Screen {
 
 	@Override
 	public void show() {
-		game.img = new Texture("badlogic.jpg");
 	}
 
 	@Override
@@ -46,39 +44,23 @@ public class GameScreen implements Screen {
 		ScreenUtils.clear(1, 0, 0, 1);
 		
 		game.batch.begin();
-		game.batch.draw(game.img, x, y);
 		game.batch.end();
 		
 	}
 
 	@Override
-	public void resize(int width, int height) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void resize(int width, int height) {}
 
 	@Override
-	public void pause() {
-		// TODO Auto-generated method stub
-		
-	}
+	public void pause() {}
 
 	@Override
-	public void resume() {
-		// TODO Auto-generated method stub
-		
-	}
+	public void resume() {}
 
 	@Override
-	public void hide() {
-		// TODO Auto-generated method stub
-		
-	}
+	public void hide() {}
 
 	@Override
-	public void dispose() {
-		// TODO Auto-generated method stub
-		
-	}
+	public void dispose() {}
 
 }
